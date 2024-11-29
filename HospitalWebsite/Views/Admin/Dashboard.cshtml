@@ -1,0 +1,10 @@
+﻿<div class="container mt-5">
+    <h2>Welcome, Admin!</h2>
+    <p>Use the links below to manage hospital data:</p>
+    <ul>
+        <li><a href="@Url.Action("ManageDoctors", "Admin")">Manage Doctors</a></li>
+        <li><a href="@Url.Action("ManageFacilities", "Admin")">Manage Facilities</a></li>
+        <li><a href="@Url.Action("ManageServices", "Admin")">Manage Services</a></li>
+    </ul>
+    <a href="@Url.Action("Logout", "Admin")" class="btn btn-danger mt-3">Logout</a>
+</div>

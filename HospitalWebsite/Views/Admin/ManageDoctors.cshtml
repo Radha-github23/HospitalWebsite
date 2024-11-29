@@ -1,0 +1,33 @@
+﻿<div class="container mt-5">
+    <h2>Manage Doctors</h2>
+    <a href="#" class="btn btn-primary mb-3">Add Doctor</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Specialty</th>
+                <th>PhotoPath</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td>@doctor.Id</td>
+                    <td>@doctor.Name</td>
+                    <td>@doctor.Specialty</td>
+                    <td>PhotoPath</td>
+                    <td>PhotoPath</td>
+                    <td></td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
